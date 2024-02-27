@@ -50,7 +50,7 @@ const[text, setText]=useState('');
 
     </div>
 
-    <div className={`container my-3 text-${props.mode==='dark'?'light':'dark'}`}>
+    <div className={`container my-3 text-${props.mode==='dark'?'light':'dark'}`} style={{"padding-bottom": "150px"}}>
         <h2>Your Text Summary</h2>
         <p>{text.split(/\s+/).filter((element)=>{return element.length!== 0}).length} words and {text.length} characters</p>
         <p>Can read in {0.008 * text.split(" ").filter((element)=>{return element.length!== 0}).length} Minutes read</p>
