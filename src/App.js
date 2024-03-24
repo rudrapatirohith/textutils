@@ -50,8 +50,8 @@ function App() {
       <Alert alert={alert} />
       <div className='container my-3'>
         <Routes>
+        <Route path="/" element={<TextForm heading='Try TextUtils - Word Counter, Character Counter, Remove extra spaces' mode={mode} showAlert={showAlert} />} />
           <Route path="/about" element={<About mode={mode}/>} />
-          <Route path="/" element={<TextForm heading='Try TextUtils - Word Counter, Character Counter, Remove extra spaces' mode={mode} showAlert={showAlert} />} />
         </Routes>
       </div>
     </Router>
